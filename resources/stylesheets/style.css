@@ -1,0 +1,195 @@
+/* General */
+html {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #353535fd;
+  color: aliceblue;
+}
+.main-content {
+  position: relative;
+  top: 3rem;
+}
+
+/* Head section */
+.head {
+  display: flex;
+  border-bottom: 1px solid rgb(27, 27, 82);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #353535fd;
+  color: aliceblue;
+  height: 3rem;
+  align-items: center;
+}
+@media only screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .head p {
+    display: none;
+  }
+  .head {
+    position: fixed;
+  }
+  .mobile li {
+    display: block;
+    color: yellow;
+  }
+}
+
+.head p {
+  flex: 1;
+  margin: 0.5rem;
+  font-weight: 900;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  margin: 0.5rem;
+}
+
+/* banner */
+.banner {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  /* height: 30rem; */
+  width: auto;
+  padding: 25%;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+.banner p {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 700px) {
+  .banner p {
+    color: white;
+    font-weight: 300;
+    font-size: 2rem;
+    font-style: italic;
+  }
+}
+
+/* about bino tech */
+/* .about-us {
+  display: flex;
+} */
+
+.vision {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 0.56rem;
+  width: auto;
+  color: whitesmoke;
+  background-color: #353535fd;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .vision {
+    border: 1px solid white;
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+.img-container img {
+  width: 15rem;
+  height: 12.5rem;
+  border-radius: 5%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: #2e2e2e;
+  border-bottom: hidden;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: aliceblue;
+}
+.tissue {
+  background-color: black;
+}
+.about-research p {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 100;
+}
+.research {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .research {
+    display: block;
+    position: relative;
+
+    text-align: justify;
+  }
+  .img-container {
+    background-color: #353535fd;
+  }
+  .about-research p {
+    width: auto;
+  }
+}
+
+.about-research {
+  width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-research {
+    width: 100%;
+  }
+}
+/* future */
+
+.future {
+  width: auto;
+  height: 40rem;
+  background-size: cover;
+  background-image: url("../images/future.jpg");
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.future p {
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px white, 0 0 1em black, 0 0 0.2em black;
+}
+.appreciation {
+  font-style: italic;
+  font-weight: 100;
+  padding: 1rem;
+  text-align: center;
+  color: blanchedalmond;
+}
+
+/* footer */
+.foot {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid white;
+}
